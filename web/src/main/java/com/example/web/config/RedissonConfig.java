@@ -1,4 +1,4 @@
-package mydemo.config;
+package com.example.web.config;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;

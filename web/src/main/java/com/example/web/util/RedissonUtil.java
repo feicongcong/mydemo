@@ -1,4 +1,4 @@
-package mydemo.util;
+package com.example.web.util;
 
 import org.redisson.Redisson;
 import org.springframework.beans.factory.annotation.Autowired;
