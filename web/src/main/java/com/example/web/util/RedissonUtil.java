@@ -1,13 +1,13 @@
 package com.example.web.util;
 
-import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class RedissonUtil {
     @Autowired
-    private Redisson redisson;
+    private RedissonClient redisson;
 
     //操作Hash集合
     public void hadd(String key, String f, Object v) {

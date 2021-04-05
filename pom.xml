@@ -7,6 +7,7 @@
     <modules>
         <module>designMode</module>
         <module>web</module>
+        <module>common</module>
     </modules>
 
     <parent>
@@ -29,12 +30,17 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+
+    <!--    <repositories>-->
+    <!--        <repository>-->
+    <!--            <id>aliyunmaven</id>-->
+    <!--            <url>https://maven.aliyun.com/repository/public</url>-->
+    <!--            <releases>-->
+    <!--                <enabled>true</enabled>-->
+    <!--            </releases>-->
+    <!--            <snapshots>-->
+    <!--                <enabled>false</enabled>-->
+    <!--            </snapshots>-->
+    <!--        </repository>-->
+    <!--    </repositories>-->
 </project>

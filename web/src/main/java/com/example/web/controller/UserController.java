@@ -2,9 +2,6 @@ package com.example.web.controller;
 
 import com.example.web.entity.User;
 import com.example.web.mapper.UserMapper;
-import com.example.web.util.RedissonUtil;
-import org.redisson.Redisson;
-import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,12 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @Autowired
     private UserMapper userMapper;
-    @Autowired
-    private RedissonClient redissonClient;
-    @Autowired
-    private Redisson redisson;
-    @Autowired
-    private RedissonUtil redissonUtil;
+//    @Autowired
+//    private RedissonClient redissonClient;
+//    @Autowired
+//    private Redisson redisson;
+//    @Autowired
+//    private RedissonUtil redissonUtil;
 
     @GetMapping("get/{id}")
     public User get(@PathVariable("id") Integer id) {
@@ -33,8 +30,8 @@ public class UserController {
 //        RBucket<Integer> age1 = redissonClient.getBucket("age");
 //        System.out.println(age1.get());
 
-        System.out.println(redissonUtil.get("name"));
-        System.out.println(redissonUtil.getInt("age"));
+//        System.out.println(redissonUtil.get("name"));
+//        System.out.println(redissonUtil.getInt("age"));
         return userMapper.getById(1);
     }
 

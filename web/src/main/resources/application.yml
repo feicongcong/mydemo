@@ -34,6 +34,11 @@ spring:
     redisson:
       config: classpath:redisson-config.yml
 
+  #mongo
+  data:
+    mongodb:
+      uri: mongodb://192.168.72.133:27017/demo
+
 
 #mybatis的相关配置
 mybatis:
